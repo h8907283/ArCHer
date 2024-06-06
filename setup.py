@@ -7,7 +7,7 @@ import setuptools
 setuptools.setup(
     name="archer",
     version='0.1.0',
-    url="https://github.com/YifeiZhou02/ArCHer",
+    url="https://github.com/h8907283/ArCHer",
     author=("Yifei Zhou"),
     description="Research code for ArCHer (Actor Critic Framework with Hierarchical Structures)",
     long_description=open("README.md", "r", encoding='utf-8').read(),

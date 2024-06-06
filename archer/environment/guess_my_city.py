@@ -173,7 +173,7 @@ class BatchedGuessMyCityEnv():
         self.model.load_state_dict(torch.load(env_load_path)['model_state_dict'])
         # self.tokenizer = BartTokenizer.from_pretrained("facebook/bart-base")
         # self.model = BartForConditionalGeneration.from_pretrained("facebook/bart-base").to(device)
-        # self.model.load_state_dict(torch.load('/home/yifei/llm_rl/20q_oracle/20q_bart_oracle.pt')['model_state_dict'])
+        # self.model.load_state_dict(torch.load('/home/ssm-user/llm_rl/20q_oracle/20q_bart_oracle.pt')['model_state_dict'])
 
     def generate_answers(self, questions):
         curr_words = [env.curr_word for env in self.env_list]
