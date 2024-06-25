@@ -80,7 +80,7 @@ def main(config: "DictConfig"):
                             policy_lm=config.policy_lm, critic_lm=config.critic_lm,
                             cache_dir=config.cache_dir, max_new_tokens=config.max_new_tokens,
                             TEMPLATE=MISTRAL_TWENTY_QUESTIONS_TEMPLATE, use_lora=config.use_lora,
-                            eos_str=config.eos_str)
+                            use_bfloat16=config.use_bfloat16, eos_str=config.eos_str)
         decode_f = mistral_twenty_questions_decode_actions
     elif config.agent_type.lower() == "online_filteredbc":
         print(">>> Using Online FilteredBC agent")
