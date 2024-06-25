@@ -4,7 +4,7 @@ defaults:
 
 # checkpoint
 checkpoint_path: 
-save_path: '/home/ssm-user/Projects/data/20q/archer_20q_15'
+save_path: '/home/ssm-user/Projects/data/20q/archer_20q_1'
 
 # env
 env_name: twenty_questions
@@ -22,6 +22,6 @@ critic_lr: 2e-5
 lm_lr: 1e-6
 
 # wandb logging
-use_wandb: True
+use_wandb: False
 project_name: 'llm_rl_20qsubset'
 run_name: 'archer-acc'
