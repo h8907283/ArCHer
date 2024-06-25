@@ -64,7 +64,6 @@ class ArcherAgent(torch.nn.Module):
         #                                max_new_tokens=32, do_sample=self.do_sample, temperature = self.temperature,\
         #                                pad_token_id = self.tokenizer.eos_token_id).cpu()
         context_len = obs_ids['attention_mask'].size(1)
-        print('Context Length:', context_len)
         outputs = self.accelerator.unwrap_model(self.model).generate(**obs_ids,\
                                     max_new_tokens=self.max_new_tokens, do_sample=self.do_sample, temperature = self.temperature,\
                                     pad_token_id = self.tokenizer.eos_token_id).cpu()
