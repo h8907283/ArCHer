@@ -21,7 +21,7 @@ eos_str: null
 capacity: 100000 #replay buffer size
 rollout_size: 32 #number of rollout trajectories for each update
 eval_size: 32 #number of trajectories for evaluation
-batch_size: 4
+batch_size: 1
 iterations: 2000 #total number of iterations
 epochs: 20 #number of epochs for the critic each iteration
 actor_epochs: 1 #number of epochs for the actor each iteration
